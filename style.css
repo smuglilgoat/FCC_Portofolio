@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: dimgray;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    padding: 23px 5px;
+  }
+
+  .ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: white radial-gradient(circle, transparent 1%, white 1%) center/15000%;
+  }
+  .ripple:active {
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+  #welcome-section {
+    background: gray;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects {
+    background: dimgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 80%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px 16px;
+    background: grey;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .project-tile {
+    text-decoration: none;
+  }
+
+  #contact {
+    background: gray;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    bottom: 0px;
+    background: dimgray;
+  }
+  
+  @media (max-width: 550px) {
+    #navbar {
+      justify-content: center;
+    }
+  }
